@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!-- {% block title %}VCU Override System Home Page{% endblock %} -->
+
+{% block page_content %}
+<!DOCTYPE html>
+
+<div class="page-header">
+    <img src= "{{ url_for('static', filename= 'vcu.jpg') }}" class="rounded" style = "width:1200px;height:250px" alt = "VCU">
+
+    <h1 class= "text-center">Welcome to the VCU Override System!</h1>
+
+        <div class = "container-fluid">
+            <div class = "text-center">
+                <p >Students receiving overrides will be notified using their VCU email accounts. The electronic overrides will allow students to register using eServices
+                     and hence requires that a student has no holds or other scheduling conflicts. Please be prompt in checking your VCU email and using the override if one is 
+                     received. If you do not receive an email, then unfortunately you did not receive an override. If you receive an override but do not follow the directions by 
+                     the end of the add period, then unfortunately you will be unable to join the class this semester.</p>
+                     
+                     <button type="button" class="btn btn-warning"><a href="/form">Click here to begin </a></button>
+            </div>
+        </div>
+</div>
+{% endblock %}
